@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  int jb, mb, db, jd, md, dd, t1, t2, lama, j, m, d, s;
+  cout<< "\n Masukkan Jam Berangkat : ";
+  cin>> jb;
+  cout<< "\n Masukkan menit Berangkat : ";
+  cin>> mb;
+  cout<< "\n Masukkan detik Berangkat : ";
+  cin>> db;
+  cout<< "\n Masukkan Jam Tiba : ";
+  cin>> jd;
+  cout<< "\n Masukkan menit Tiba : ";
+  cin>> md;
+  cout<< "\n Masukkan detik Tiba : ";
+  cin>> dd;
+  t1 = (jb*3600)+(mb*60)+db;
+  t2 = (jd*3600)+(md*60)+dd;
+  lama = t2 - t1;
+  j = lama/3600;
+  s = lama % 3600;
+  m = s/60;
+  d = s % 60;
+  cout<<"\n Lama Perjalanan Anda adalah : " << j << " jam " << m << " menit " << d << " detik ";
+}
