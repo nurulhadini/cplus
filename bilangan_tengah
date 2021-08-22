@@ -4,6 +4,10 @@ using namespace std;
 int main()
 {
   int angka1,angka2,angka3;
+  char lanjut;
+Do{
+cout<< "PROGRAM MENENTUKAN BILANGAN TENGAH \n";
+cout<< "================================== \n";
 cout<< " Masukkan Bilangan ke 1 : \n";
 cin >> angka1 ;
 cout<< " Masukkan Bilangan ke 2 : \n";
@@ -17,4 +21,8 @@ if ((angka1>angka2 && angka1<angka3) || (angka1<angka2 && angka1>angka3)){
     else if ((angka3>angka2 && angka3<angka1) || (angka3<angka2 && angka3>angka1)){ 
         cout << "Bilangan Tengah adalah : " << angka3;}
     else { cout << "Bilangan yang anda masukkan tidak boleh sama";}
+cout<< "Apakah Anda ingin mengulang ? (Y/T) ";
+cin >> lanjut;}
+While (lanjut == 'Y' || lanjut == 'y');
+return 0;
 }
