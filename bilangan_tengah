@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int angka1,angka2,angka3;
+cout<< " Masukkan Bilangan ke 1 : \n";
+cin >> angka1 ;
+cout<< " Masukkan Bilangan ke 2 : \n";
+cin >> angka2 ;
+cout<< " Masukkan Bilangan ke 3 : \n";
+cin >> angka3 ;
+if ((angka1>angka2 && angka1<angka3) || (angka1<angka2 && angka1>angka3)){
+    cout << "Bilangan Tengah adalah : " << angka1;}
+    else if ((angka2>angka1 && angka2<angka3) || (angka2<angka1 && angka2>angka3)){
+        cout << "Bilangan Tengah adalah : " << angka2;}
+    else if ((angka3>angka2 && angka3<angka1) || (angka3<angka2 && angka3>angka1)){ 
+        cout << "Bilangan Tengah adalah : " << angka3;}
+    else { cout << "Bilangan yang anda masukkan tidak boleh sama";}
+}
