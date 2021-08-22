@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int sisi1,sisi2,sisi3;
+char lanjut;
+
+Do{
+cout<< "PROGRAM MENENTUKAN JENIS SEGITIGA \n";
+cout<< "================================== \n";
+cout<< " Masukkan Sisi ke 1 : ";
+cin >> sisi1 ;
+cout<< " Masukkan Sisi ke 2 : ";
+cin >> sisi2 ;
+cout<< " Masukkan Sisi ke 3 : ";
+cin >> sisi3 ;
+cout << " \n";
+if (sisi1==sisi2 && sisi2==sisi3){
+    cout << "Segitiga Sama Sisi";}
+    else if (sisi1==sisi2 || sisi1==sisi3 || sisi2==sisi3){
+        cout << "Segitiga Sama Kaki ";}
+    else { cout << "Segitiga Sembarang";}
+cout<< "Apakah Anda ingin mengulang ? (Y/T) ";
+cin >> lanjut;}
+While (lanjut == 'Y' || lanjut == 'y');
+return 0;
+}
